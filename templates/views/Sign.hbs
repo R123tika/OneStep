@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    {{>headers}}
+    <div class="container-fluid mt-5 contact-style">
+        <div class="row">
+            <div class="col-md-8 col-12 mx-auto">
+                <div class="row">
+                  <div class="col-md-4 col-12 hero-text ">
+                        <figure class="me-1 ">
+                            <img src="image/sing.jpg" class="sign" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-12 mx-auto">
+                    <h1 class="text-center main-heading ">Sign In</h1>
+                    <p class="text-center sub-heading">Sign in to Join with us</p>
+                    <form action="Sign" method="Post">
+                    <div class=" form-group">
+    <label for="inputEmail4" class="form-label">Name</label>
+    <input type="text" class="form-control" id="inputEmail4" name = "Name" placeholder="Enter Your Name">
+  </div>
+  <div class=" form-group">
+    <label for="inputPassword4" class="form-label">Mobile</label>
+    <input type="number" class="form-control"  name = "Mobile" placeholder="Enter Your Mobile Number" id="inputPassword4">
+  </div>
+ 
+  <div class=" form-group">
+    <label for="inputCity" class="form-label">Email</label>
+    <input type="email" class="form-control"  name = "Email" placeholder="Enter Your Email" id="inputCity">
+  </div>
+  <div class=" form-group">
+    <label for="inputCity" class="form-label">Password</label>
+    <input type="password" class="form-control"  name = "Password" placeholder="Create Your Password" id="inputCity">
+  </div>
+  <div class=" form-group">
+    <label for="inputCity" class="form-label">Confirm Password</label>
+    <input type="password" class="form-control"  name = "Cpassword" placeholder="Confirm Your Password" id="inputCity">
+  </div>
+  <div class=" form-group">
+    <button type="submit" class="btn-style btn-primary mt-5 ">Submit</button>
+  </div>
+  
+  </div>
+</form>
+</div>
+             
+</body>
+</html>

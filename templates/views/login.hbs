@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    {{>headers}}
+    <div class=" container-fluid mt-5 contact-style">
+        <div class="row formLogin">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-7 col-12 ">
+                        <figure>
+                            <img src="image/loginpage 1.png" alt="" class="back">
+                        </figure>
+                    </div>
+                    <div class="col-md-5 col-12 ">
+                        <h1 class="text-center main-heading mb-5">Login In</h1>
+                        <p name="Invalid"></p>
+                        <form action="login" method="Post">
+                    <div class=" form-group">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" name = "Email" placeholder="Enter Your Email">
+  </div>
+ 
+  <div class=" form-group">
+    <label for="inputCity" class="form-label">Password</label>
+    <input type="password" class="form-control"  name = "Password" placeholder="Enter Your Password" id="inputCity">
+  </div>
+    <div class=" form-group">
+    <button type="submit" class="btn-style btn-primary mt-5 ">Submit</button>
+    <span class="login text-muted">Need an account? <a href="/Sign" class="fs-2 text-decoration-none ">SignUp</a></span>
+  </div>
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     {{>footer}} 
+
+</body>
+</html>
