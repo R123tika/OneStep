@@ -1,3 +1,5 @@
+
+const mongoose = require('mongoose')
 const express = require('express')
 const app = express();
 const bcrypt = require('bcrypt')
@@ -6,13 +8,19 @@ require('./db/data');
 const Contact = require('./model/Schema')
 const Sign = require('./model/Sign')
 const State =require('./model/State');
+const Abhiyan = require('./model/Abhiyan')
 const hbs = require('hbs')
-const env =require('dotenv')
 const port = process.env.Port || 3003
 const staticPath = path.join(__dirname, '../public')
 const templatePath = path.join(__dirname, '../templates/views')
 const partialPath = path.join(__dirname, '../templates/partials')
 // console.log(path.join(__dirname , '../public'))
+
+
+const dotenv = require('dotenv')
+
+app.use(express.urlencoded({ extended: true }));
+
 
 app.use(express.static(staticPath))
 app.use('/css',express.static(path.join(__dirname,'../node_modules/bootstrap/dist/css')))
@@ -27,7 +35,14 @@ hbs.registerPartials(partialPath)
 
 
 app.get('/',(req,res)=>{
-    res.render("home")
+    // res.render("home")
+    Abhiyan.find({})
+    .then((data)=>{
+        res.render("home",{data})
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
 })
 
 app.get('/Service',(req,res)=>{

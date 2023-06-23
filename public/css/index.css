@@ -170,6 +170,7 @@ img .back_about{
 .box {
   position: relative;
   width: 100%;
+  flex-wrap: wrap;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -178,7 +179,8 @@ img .back_about{
   margin-top: 75px;
   padding-bottom: 30px;
   padding: 0 30px;
-  min-height: 198px;
+  min-height: 50rem; 
+  flex-wrap: wrap;
   text-align: center;
   border-radius: 10px;
   background-color: #fff;
@@ -309,6 +311,14 @@ footer p {
 
 /* media queries part starts here   */
 
+ @media (max-width: 1457px) {
+  .our-services {
+    font-size: 1rem;
+    /* min-height: 80rem; */
+    
+   
+   }
+ }
  @media (max-width: 768px) {
   #logo { 
     font-size: 2.5rem;
@@ -338,3 +348,8 @@ footer p {
     font-size: 2rem;
   }
 } 
+@media screen and (max-width: 1707px) {
+  *{
+    font-size: 2rem;
+  }
+}
